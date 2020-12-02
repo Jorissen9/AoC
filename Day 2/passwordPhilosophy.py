@@ -25,8 +25,6 @@ for i in range(len(passwordList)):
         amountCorrectCounter += 1
 
     # part 2
-    minAmountCorrect = pwd[minAmount-1] == policyLetter
-    maxAmountCorrect = pwd[maxAmount-1] == policyLetter
     if not(pwd[minAmount-1] == policyLetter == pwd[maxAmount-1]) and (pwd[minAmount-1] == policyLetter or pwd[maxAmount-1] == policyLetter):
         positionCorrectCounter += 1
     
