@@ -47,7 +47,7 @@ def calcPermutations(group):
         return 2 ** amount
     elif amount == 3:
         return (2 ** amount) - 1
-    elif amount <= 4: # Not 100% sure, but removing this also works so never > 3 🤷‍♂️
+    elif amount >= 4: # Not 100% sure, but removing this also works so never > 3 🤷‍♂️
         return (2 ** amount) - (1 + 2 ** (amount - 3))
 
 def handlePossibleIndexChanges(possibleChangeIndexes):
